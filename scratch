@@ -1,0 +1,1 @@
+/usr/local/bin/rsync -aNHAXDxhn -P --numeric-ids --fileflags --force-change --stats --protect-decmpfs --del --delete-excluded --exclude-from=/Users/admin/Documents/rsync-excludes.txt /Volumes/Storage/webroot/ /Shared\ Items/webroot-bu/
