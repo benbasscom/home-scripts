@@ -17,10 +17,10 @@ host_name="$(scutil --get ComputerName)"
 
 # Setting variables for portability and ease of use
 SOURCE="root@home.benbass.com:/Volumes/Storage/munki/repo/"		# Source of the files
-DESTINATION="/Volumes/Storage/Munki/home_repo/"					# location of backup files
-RLOG="/Library/Logs/com.trmacs/home_repo-rlog.log"				# rsync log file
+DESTINATION="/Users/benbass/munki_repo/home/home_repo"			# location of backup files
+RLOG="/Library/Logs/com.trmacs/home_repo-rlog.log"			# rsync log file
 EXCLUDES="/Library/Scripts/trmacs/rsync-excludes.txt"			# File containing excludes
-REMOTE_RSYNC="/usr/local/bin/rsync"								# location of remote rsync binary
+REMOTE_RSYNC="/usr/local/bin/rsync"					# location of remote rsync binary
 # Path Variables
 RSYNC="/usr/local/bin/rsync"						# Location of the rsync bin
 
@@ -40,10 +40,10 @@ echo "Destination: 	"${DESTINATION}""
 # -n for testing (dry run) USE THIS WHEN TESTING!!!!
 
 "$RSYNC"							\
-		-rltxzhX						\
+		-rltxzhX					\
 		--stats --del --delete-excluded			\
 		--log-file="${RLOG}" 				\
-		--rsync-path="${REMOTE_RSYNC}"		\
+		--rsync-path="${REMOTE_RSYNC}"			\
 		--exclude-from="${EXCLUDES}"			\
 		"${SOURCE}" "${DESTINATION}"
 

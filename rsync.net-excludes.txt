@@ -28,13 +28,25 @@
 # what you are backing up to.  I am synchronizing the root of each directory, but not the contents.
 
 Automounts/*
+BitTorrent Sync/*
 Calibre Library/*
 Dropbox/*
+Downloads/*
+Virtual Machines/*
 rsync.net/
 TRBox/*
 Library/Caches/*
 Library/Application Support/Sparrow/*
+Library/Application Support/Adobe/*
+Library/Application Support/com.marketcircle.*
+Library/Mobile Documents/
 .Trash/*
+dwhelper/untitled folder/*
+Desktop/Software/*
+munki_repo/*
+Music/*
+Movies/*
+
 
 Desktop/$RECYCLE.BIN/
 Documents/$RECYCLE.BIN/
