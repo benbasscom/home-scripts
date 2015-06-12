@@ -28,6 +28,7 @@
 # what you are backing up to.  I am synchronizing the root of each directory, but not the contents.
 
 Automounts/*
+Applications/*
 BitTorrent Sync/*
 Calibre Library/*
 Dropbox/*
@@ -36,18 +37,22 @@ Virtual Machines/*
 rsync.net/
 TRBox/*
 Library/Caches/*
+Library/Thunderbird/*
+Library/Extensis/*
+Library/Mail/*
 Library/Application Support/Sparrow/*
 Library/Application Support/Adobe/*
+Library/Application Support/Garmin/*
 Library/Application Support/com.marketcircle.*
 Library/Mobile Documents/
 .Trash/*
 dwhelper/untitled folder/*
 Desktop/Software/*
+Desktop/Wiki work/*
 munki_repo/*
 Music/*
 Movies/*
-
-
+Pictures/iPhoto Library.migratedphotolibrary/
 Desktop/$RECYCLE.BIN/
 Documents/$RECYCLE.BIN/
 Downloads/$RECYCLE.BIN/

@@ -5,7 +5,7 @@
 # Rsync script to backup home profile to rsync.net repo. 
 vers='home_repo_sync-homedir-0.1'
 # 0.1 - Initial script
-
+# 0.2 - update for new munkiserver.
 
 
 log="/Library/Logs/com.trmacs/home_repo.log"
@@ -16,7 +16,7 @@ exec 2>> "${err_log}"
 host_name="$(scutil --get ComputerName)"
 
 # Setting variables for portability and ease of use
-SOURCE="root@home.benbass.com:/Volumes/Storage/munki/repo/"		# Source of the files
+SOURCE="root@munkiserver.benbass.com:/web/munki/repo/"			# Source of the files
 DESTINATION="/Users/benbass/munki_repo/home/home_repo"			# location of backup files
 RLOG="/Library/Logs/com.trmacs/home_repo-rlog.log"			# rsync log file
 EXCLUDES="/Library/Scripts/trmacs/rsync-excludes.txt"			# File containing excludes
